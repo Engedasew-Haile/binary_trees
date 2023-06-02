@@ -47,6 +47,7 @@ void check_balance_avl(avl_t **node, int value)
  * @mode: 1 for inorder sucessor, 2 for inorder precessor
  * Return: pointer to the next/previous node
  */
+
 avl_t *inorder_sucessor(avl_t *tree, int mode)
 {
 	avl_t *node;
@@ -90,6 +91,7 @@ avl_t *inorder_sucessor(avl_t *tree, int mode)
  * @arg_node: poitner to the next/previous node
  * Return: no return
  */
+
 void change_node(avl_t **arg_tree, avl_t **arg_node)
 {
 	avl_t *put_node, *tree;
@@ -142,6 +144,7 @@ void change_node(avl_t **arg_tree, avl_t **arg_node)
  * @value: node value
  * Return: pointer the removed node
  */
+
 avl_t *avl_search_remove(avl_t **tree, int value)
 {
 	avl_t *put_node;
@@ -194,6 +197,7 @@ avl_t *avl_search_remove(avl_t **tree, int value)
  * @value: node value
  * Return: pointer to the new root
  */
+
 avl_t *avl_remove(avl_t *root, int value)
 {
 	if (root == NULL)
